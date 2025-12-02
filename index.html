@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio: Aashish Kumar</title>
+    <link rel="icon" type="image/png" href="img/PP.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="#" class="logo">LOGO</a>
+
+            <ul class="navlist">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <a href="#" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="main-body">
+        
+        <!-- Left Content -->
+        <div class="main-content" data-aos="fade-right">
+            <h4>Hi, Here</h4>
+            <h1>I'm <span>Aashish Kumar</span></h1>
+            <p>An Undergraduate Student, recently in 2nd Year, and IIIrd Semester</p>
+
+            <div class="social-main">
+                <a href="https://www.facebook.com/aashish.gpta"><i class="ri-facebook-fill"></i></a>
+                <a href="#/"><i class="ri-instagram-fill"></i></a>
+                <a href="https://github.com/aashis543"><i class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/aashish-gupta-1318a531a/"><i class="ri-linkedin-fill"></i></a>
+            </div>
+
+            <a href="#" class="btn" data-aos="flip-left">Download CV</a>
+        </div>
+
+        <!-- RIGHT PHOTO -->
+        <div class="hero-img" data-aos="fade-left">
+            <img src="./img/PP.png" alt="My Photo">
+        </div>
+
+    </section>
+
+    <!-- SERVICE SECTION -->
+    <section class="service" data-aos="fade-in">
+        <div class="website">
+            <h1 data-aos="fade-up">Our Websites</h1>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <p>
+            Copyright © 2025 Uttam Sah Designed and Developed By 
+            <a href="https://itsuttamsah.github.io/Portfolio/#" target="_blank" class="footer-name">
+                Uttam Sah
+            </a>
+        </p>
+
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/uttam-sah-49a405324/" target="_blank">
+    
+                <i class="ri-linkedin-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/iam_uttamsah" target="_blank">
+                <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="https://github.com/itsuttamsah" target="_blank">
+                <i class="ri-github-fill"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+            mirror: true
+        });
+
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>
